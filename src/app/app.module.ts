@@ -1,8 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { CommonModule } from '@angular/common';
 
 import { AppComponent } from './app.component';
+import { TableModule } from 'primeng/table';
+import { SharedModule } from 'primeng/primeng';
 
 
 @NgModule({
@@ -10,7 +12,10 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    CommonModule,
+    BrowserModule,
+    SharedModule,
+    TableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
